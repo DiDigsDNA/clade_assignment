@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 '''Accepts fasta files containing amino acid sequence, reading them in as
 amino acid sequence objects.  Reads influenza clade defintions (i.e. amino 
 acids at certain positions) from .json file into dictionary structure. Searches
