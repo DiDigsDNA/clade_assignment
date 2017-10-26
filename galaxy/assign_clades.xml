@@ -1,10 +1,9 @@
 <tool id="assign_clades" name="Assign Clades" version="0.1.0">
   <requirements>
-    <requirement type="package">package_biopython_1_61</requirement>
+    <requirement type="package" version="0.1.0">assign_clades</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    python
-    $__tool_directory__/assign_clades.py
+    assign_clades.py
     '$input_fasta'
     '$clade_definitions'
     '$output_file'
