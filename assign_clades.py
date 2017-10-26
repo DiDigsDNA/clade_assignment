@@ -2,14 +2,15 @@
 
 '''Accepts fasta files containing amino acid sequence, reading them in as
 amino acid sequence objects.  Reads influenza clade defintions (i.e. amino 
-acids at certain positions) from .json file into dictionary structure. Searches
-each of the amino acid sequence objects for the more general clades (i.e. 3C.2a or
-3C.3a and then 3c.2a1 variants if applicable) and appends and underscore to the
-Sequence name, followed by either the name of the clade or "undetermined". '''
+acids at certain positions) from .csv file into dictionary structure. Searches
+each of the amino acid sequence objects for a list of matching clades, assigns
+the most 'evolved' (i.e. child as opposed to parent clade) to the sequence. Appends
+"_cladename" to the Sequence name and generates a fasta file of original sequences with 
+modified names.'''
 
 '''Author: Diane Eisler, Molecular Microbiology & Genomics, BCCDC Public Health Laboratory, Oct 2017'''
 
-import sys,string,os, time, Bio, json
+import sys,string,os, time, Bio
 from Bio import Seq, SeqIO, SeqUtils, Alphabet, SeqRecord
 from Bio.SeqRecord import SeqRecord
 from Bio.Alphabet import IUPAC
