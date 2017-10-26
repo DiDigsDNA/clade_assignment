@@ -45,9 +45,6 @@ def call_clade(record):
             if record[index] == aa:
                 found += 1
         if (found == shouldFind):
-            #print "\n%s contains %i of %i clade \"%s\" antigenic sites!" % (record.id,found, shouldFind, cladeName)
-            #add the matching clade name to a list
-            #matchList.append(cladeName)
             #add the matching clade tuple to the list of matches
             matchList.append(clade)
     return matchList
