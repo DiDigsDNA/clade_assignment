@@ -1,6 +1,6 @@
 package:
   name: assign_clades
-  version: 0.1.0
+  version: 0.0.0
 
 source:
   git_url: https://github.com/dfornika/clade_assignment
