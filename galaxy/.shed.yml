@@ -1,7 +1,0 @@
-name: assign_clades
-owner: dfornika
-description: Assign clades to fasta sequence files
-homepage_url: https://github.com/dfornika/clade_assignment
-long_description: 
-remote_repository_url: https://github.com/dfornika/clade_assignment
-type: unrestricted
